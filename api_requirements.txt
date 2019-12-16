@@ -1,0 +1,50 @@
+/api/endeavor
+/api/activity
+/api/stat/activity
+/api/users
+/api/future/stat/quests
+
+В каждом файле - объект, содержащий свойства (http методы) со значениями
+  значения - это функции, которые должны обработать каждый запрос
+В более сложном случае он может содержать вложенные объекты - роуты
+
+
+
+
+
+
+
+
+
+
+obj = {
+  alpha: {
+    any: {
+      corgy: "fat",
+      taksa: "flat"
+    },
+    beny: "dead",
+    raba: {
+      mucho: {
+        better: "YES"
+      }
+    },
+  },
+  beta: 7,
+  gamma: {
+    reeba: true,
+    zooty: "true"
+  }
+}
+
+write a function fn(str) { ... }
+// obj is in fn's closure
+
+str0 = "beta"
+//should return 7
+str1 = "gamma/reeba/foo"
+// should return false
+str2 = "alpha/raba/mucho/better"
+// should return "YES"
+str3 = "alpha/raba/mucho"
+// should return false

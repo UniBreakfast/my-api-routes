@@ -7,6 +7,15 @@
     {
       "type": "node",
       "request": "launch",
+      "name": "sandbox",
+      "program": "${workspaceFolder}/sandbox.js",
+      "skipFiles": [
+        "<node_internals>/**"
+      ]
+    },
+    {
+      "type": "node",
+      "request": "launch",
       "name": "Launch",
       "skipFiles": [
         "<node_internals>/**"
